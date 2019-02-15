@@ -1,0 +1,42 @@
+<!--template/template.wxml-->
+<view class="tabBar">
+    <view class="tabBar-item">
+        <view class="home">
+             <navigator wx:if="{{currentUrl != 'home'}}" open-type="redirect" url="/page/pages/home/home" hover-class="none">
+                <image class='fun' src='/assets/home.jpg'></image>
+            </navigator> 
+            <view>
+                  <image class='fun' src='/assets/home-click.jpg'></image>
+            </view>
+        </view>
+    </view>
+    <view class='tabBar-photo'>
+        <view  hover-class="none" bindtap='Publish'>
+            <view>
+                <image class='pai' src='/assets/publish.png'></image>
+            </view>
+        </view>
+    </view>
+    <view class="tabBar-item" style='position:relative;'>
+        <!-- 我的 -->
+        <view class="home">
+        <navigator wx:if="{{currentUrl != 'user'&&login==true}}" open-type="navigate" url="/page/pages/user/user" hover-class="none">
+                <image class='fun' src='/assets/icon-user.png'></image>
+            </navigator>
+             <navigator wx:if="{{currentUrl != 'user'&&login==false}}" open-type="navigate" url="/page/pages/login/login" hover-class="none">
+                <image class='fun' src='/assets/icon-user.png'></image>
+            </navigator>
+            <view wx:if="{{currentUrl == 'user'}}">
+                <image class='fun' src='/assets/icon-users.png'></image>
+            </view>
+            <!-- <navigator wx:if="{{currentUrl != 'user' &&login==true}}" open-type="redirect" url="/page/pages/user/user" hover-class="none">
+                <view>
+                    <image class='fun' src='/assets/icon-user.png'></image>
+                </view>
+            </navigator>
+            <view wx:if="{{currentUrl == 'user' &&login==false}}">
+                <image class='fun' src='/assets/icon-users.png'></image>
+            </view> -->
+        </view>
+    </view>
+</view>

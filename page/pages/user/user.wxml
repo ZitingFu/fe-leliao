@@ -1,0 +1,43 @@
+
+<view class="user-login">
+    <image src="{{user.avatarUrl}}"/>
+    <view>{{user.nickName}}</view>
+</view>
+<view class='list'>
+  <view style='position:relative;'>我的心情
+    <form class="form_id" bindsubmit="MyTask" report-submit='true'>
+      <button class='form_button' formType="submit"></button>
+    </form>
+    <image wx:if="{{job}}" class='dian_reg' src='/assets/dian.png'></image>
+    <image class='right-arrow' src='/assets/right-arrow.png'></image>
+  </view>
+  <view style='position:relative;'>我的音乐
+    <form class="form_id" bindsubmit="my_order" report-submit='true'>
+      <button class='form_button' formType="submit"></button>
+    </form>
+    <image wx:if="{{order}}" class='dian_reg' src='/assets/dian.png'></image>
+    <image class='right-arrow' src='/assets/right-arrow.png'></image>
+  </view>
+  <view style='position:relative;'>我的段子
+    <form class="form_id" bindsubmit="coinUrl" report-submit='true'>
+      <button class='form_button' formType="submit"></button>
+    </form>
+    <image wx:if="{{coin_status}}" class='dian_reg' src='/assets/dian.png'></image>
+    <image class='right-arrow' src='/assets/right-arrow.png'></image>
+  </view>
+  <view style='position:relative;'>我的日记
+    <form class="form_id" bindsubmit="questionUrl" report-submit='true'>
+      <button class='form_button' formType="submit"></button>
+    </form>
+    <image class='right-arrow' src='/assets/right-arrow.png'></image>
+  </view>
+  <view style='position:relative;'>意见反馈
+    <form class="form_id" bindsubmit="feedbackUrl" report-submit='true'>
+      <button class='form_button' formType="submit"></button>
+    </form>
+    <image class='right-arrow' src='/assets/right-arrow.png'></image>
+  </view>
+</view>
+<view>
+  <tab-bar current-url="user" red-dot="{{all_dian}}" bindclick="previewUrl" login="{{has_login}}"></tab-bar>
+</view>

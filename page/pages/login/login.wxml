@@ -1,0 +1,6 @@
+<!--page/pages/login/login.wxml-->
+<view class='container'>
+    <image src='/assets/logo.jpg'></image>
+    <view class='title'>Le Liao</view>
+    <button class='login' open-type='getUserInfo' bindgetuserinfo='onGetUserInfo'>微信登录</button>
+</view>

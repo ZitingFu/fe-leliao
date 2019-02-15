@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "话题发布",
+  "usingComponents": {
+    "tab-bar": "/template/template"
+  }
+}

@@ -1,0 +1,33 @@
+/* pages/user/user.wxss */
+.text{
+  margin-left: 50px; /**/
+}
+.user-login{
+  text-align: center
+}
+.user-login image{
+  height: 200rpx;
+  width: 200rpx;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.list {
+  margin-top: 6rpx;
+  background: #fff;
+  margin-bottom:130rpx;
+}
+.list view{
+  line-height: 98rpx;
+  font-size: 40rpx;
+  color: #333333;
+  padding-left: 3.2%;
+  border-bottom: 1rpx solid #d8d8d8;
+  position: relative;
+}
+.list view .right-arrow {
+  width: 20rpx;
+  height: 34rpx;
+  position: absolute;
+  top: calc(50% - 17rpx);
+  right: 2%;
+}

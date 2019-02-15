@@ -1,0 +1,248 @@
+/* pages/home/home.wxss */
+.text-image{
+   /* background-image: url('https://tpc.googlesyndication.com/daca_images/simgad/15927998524879504871');  */
+   background: green; 
+  background-repeat:repeat-x;
+  
+/* 字体属性样式  font*/
+  font-size: x-large;   /*大小          x-large：特大      xx-small：极小     单位：PX、PD*/
+ 
+  font-style: normal;   /*样式          oblique 偏斜体     italic  斜体      normal 正常*/
+ 
+  line-height: normal;  /*行高          normal 正常            单位：PX、PD、EM*/
+ 
+  font-weight: bold;    /*粗细          bold 粗体    lighter 细体  normal  正常*/
+ 
+  font-variant:normal;/*变体        small-caps 小型大写字母     normal 正常*/
+  
+  text-transform:capitalize;/*大小写    capitalize    首字母大写 uppercase 大写   lowercase  小写  none 无*/
+ 
+  text-decoration: overline;/*修饰      underline 下划线    overline  上划线 line-through 删除线 blink 闪烁*/
+ 
+  text-align: center;/*对齐         justify   两端对齐  left   左对齐  right  右对齐  center 居中对齐*/
+  
+  text-indent: 15px;/*缩进*/
+  
+  font-family: Courier New;/*常用字体    "Courier New", Courier, monospace, "Times New Roman", Times, serif, Arial, Helvetica, sans-serif, Verdana */
+  
+  letter-spacing: 2px;/*字间距    normal 无*/
+ 
+  vertical-align: baseline;/*垂直对齐    baseline  基线   sub 下标  super  text-top; middle; bottom; text-bottom;词间距word-spacing: normal; 数值*/
+
+  white-space:pre;/*空格    pre 保留        nowrap 不换行 */
+  
+/*背景属性*/
+  background: green;/*背景颜色 */ 
+  
+  /* background-color: #ffffff;/*色彩 */
+  
+  /* background-image: url();/*图片 */
+  
+  /*background-repeat: no-repeat;/*重复*/
+  
+  background-attachment:fixed;/*滚动      fixed   固定   scroll 滚动 */
+  
+  background-position: left;/*位置        left  水平      top 垂直*/
+ 
+  /* background:#000 url(..) repeat fixed left top; 简写方法  这个在阅读代码中经常出现，要认真的研究 ***************/
+  
+  /* Block   区块属性 */
+  
+/*显示 {display:block;}(块) inline;(内嵌) list-item;(列表项) run-in;(追加部分) compact;(紧凑) marker;(标记) table; inline-table; table-raw-group; table-header-group; table-footer-group; table-raw; table-column-group; table-column; table-cell; table-caption;(表格标题) /*display 属性的了解很模糊*/
+   /* display: block;  */
+
+/*方框属性： (Box)*/
+  /*width:;    height:;     float:;    clear:both;    margin:;      padding:; 顺序：上右下左*/
+  
+/*边框属性： (Border)*/
+  
+  /*border-style: dotted;(点线) dashed;(虚线) solid;(实线) double;(双线) groove;(槽线) ridge;(脊状) inset;(凹陷) outset;border-width:; 边框宽度
+  */
+  border-style: outset;
+  /* border-width: 5px;  边框宽度*/
+
+  border-color: red;/*边框颜色*/
+  /*简写方法border：width style color; /*简写*/
+
+/*定位属性： (Position)*/
+  /**/
+
+/*CSS边框空白*/
+  padding-top:10px; /*上边框留空白*/
+
+  padding-right:10px; /*右边框留空白*/
+
+  padding-bottom:10px; /*下边框留空白*/
+
+  padding-left:10px; /*左边框留空白*/
+  width: 100%;
+  height: 100px; 
+}
+.list-sty{
+/*列表属性   list-style: */
+
+  list-style-type: disc;/*类型     disc  圆点    circle 圆圈  square  方块  decimal  数字    lower-roman 小罗码数字 upper-roman; lower-alpha; upper-alpha;*/
+
+  list-style-position: outside;/*位置   inside 外 */
+
+  list-style-image: url('https://tpc.googlesyndication.com/daca_images/simgad/15927998524879504871');/*图像*/
+}
+.title{
+  text-align: center;
+}
+/********view  排列*********/
+.flex-wrp{
+  width: 100%;
+  display: flex;
+  flex-direction: row;/*row：从左到右的水平方向为主轴  
+                        row-reverse：从右到左的水平方向为主轴
+                        column：从上到下的垂直方向为主轴
+                        column-reverse：从下到上的垂直方向为主轴
+                      */
+  justify-content: space-between;/*flex-start        主轴起点对齐(默认值)                            横向布局方式
+                                flex-end：主轴结束点对齐    
+                                center：在主轴中居中对齐     
+                                space-between：两端对齐，除了两端的子元素分别靠向两端的容器之外，其他子元素之间的间隔都相等
+                                space-around：每个子元素之间的距离相等，两端的子元素距离容器的距离也和其它子元素之间的距离相同
+                                */                    
+}
+.flex-item{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+.bc_green{
+  background-color: green;
+}
+.bc_red{
+  background-color: red;
+}
+.bc_blue{
+  background-color: blue;
+}
+.bc_yellow{
+  background-color: yellow;
+}
+/*view*/
+.v-list-view{
+  width: 100%;
+  height: 125px;
+  display: flex;
+  flex-direction: row;/*row：从左到右的水平方向为主轴  
+                        row-reverse：从右到左的水平方向为主轴
+                        column：从上到下的垂直方向为主轴
+                        column-reverse：从下到上的垂直方向为主轴
+                      */
+  justify-content: space-between;/*flex-start        主轴起点对齐(默认值)                            横向布局方式
+                                flex-end：主轴结束点对齐    
+                                center：在主轴中居中对齐     
+                                space-between：两端对齐，除了两端的子元素分别靠向两端的容器之外，其他子元素之间的间隔都相等
+                                space-around：每个子元素之间的距离相等，两端的子元素距离容器的距离也和其它子元素之间的距离相同
+                              */    
+}
+
+.v-item{
+   width: 90px;
+   height: 90px;
+   text-align: center;
+}
+.item-image{
+    width: 90px;
+    height: 90px;
+}
+.item-text{
+    font-family: serif;/*常用字体    "Courier New", Courier, monospace, "Times New Roman", Times, serif, Arial, Helvetica, sans-serif, Verdana */
+}
+
+/**scroll-view*/
+.scroll-view-item{
+    width: 100%;
+    height: 150px;
+}
+/* 轮播图样式*/
+.swiper{
+  height: 220px;
+}
+.slide-image{
+    width: 100%;
+    height: 100%;
+}
+/*cover-item*/
+#myVideo{
+  width: 100%;
+}
+.controls {
+  position: relative;
+  top: 50%;
+  height: 50px;
+  margin-top: -25px;
+  display: flex;
+}
+.play,.pause,.time {
+  flex: 1;
+  height: 100%;
+}
+.time {
+  text-align: center;
+  background-color: rgba(0, 0, 0, .5);
+  color: white;
+  line-height: 50px;
+}
+.img {
+  width: 40px;
+  height: 40px;
+  margin: 5px auto;
+}
+.label-1, .label-2{
+    margin-bottom: 15px;
+}
+.label-1__text, .label-2__text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.label-1__icon {
+    position: relative;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    background: #fcfff4;
+}
+
+.label-1__icon-checked {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    background: #1aad19;
+}
+
+
+.label-2__icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    background: #fcfff4;
+    border-radius: 50px;
+}
+
+.label-2__icon-checked {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 12px;
+    height: 12px;
+    background: #1aad19;
+    border-radius: 50%;
+}
+
+.label-4_text{
+    text-align: center;
+    margin-top: 15px;
+}

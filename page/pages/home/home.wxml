@@ -1,0 +1,53 @@
+<!--page/pages/home/home.wxml-->
+<view style="background-color: #ffffff;padding-bottom: 140rpx"><!--#fcb3b3    acdbce-->
+
+  <view class="top-image">
+    <image src="/image/music.png" class="show-iconImage" animation="{{animation}}" mode="scaleToFill"></image>
+    <!-- <image class="user-avatar" src='{{user.avatarUrl}}'></image>
+  <text>{{user.nickName}}</text>  -->
+  </view>
+  <!-- 轮播  -->
+  <view style="height: 5px"></view>
+  <swiper class="swiper" ndicator-dots="true" autoplay="true" interval="3000" duration="500" circular="true" indicator-dots="true">
+    <block wx:for="{{list_banner}}" wx:key="key">
+      <swiper-item>
+        <image class="slide-image" bindtap='bindRedirect' data-value='{{item.jump_address}}' data-type="{{item.type}}" src="{{item.url}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!--分类按钮-->
+  <view class="v-list-view">
+    <block wx:for="{{list_type}}" wx:key="key">
+      <view class="v-item" >
+        <image class="item-image" src="{{item.url}}"  bindtap='bindRedirect' data-value='{{item.value}}'></image>
+        <text class="item-text"  bindtap='bindRedirect' data-value='{{item.value}}'>{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+
+  <view class="image-cen"></view>
+  <view class="item-publish">最新发布:
+  </view>
+  <view class="topic">
+  <view class="topic-item" hover-class="hover" bindtap="getTopicInfo" wx:for="{{topic_list}}" wx:key="key" data-id='{{item.id}}'>
+    <!-- <form class="form_id"  bindsubmit="formSubmitInfo" data-id='{{item.id}}' report-submit='true'>
+             <button class='form_button' formType="submit"></button>
+    </form> -->
+    <image src="{{item.user_avatar}}"></image>
+    <view class='topic-name-co'>
+      <text class="adds">内容：{{item.content}}</text>
+      <view class="item-type">
+      <image class="item-type-image" src="/image/publish-user.png"></image>
+      <text class="item-type-uname">来自:{{item.user_name}}</text>
+      <text class="item-type-time">{{item.create_time}}</text>
+        <!-- <text>的{{item.type ==1 ? "心情": "段子"}}</text> -->
+      </view>
+    </view>
+  </view>
+  </view>
+  <!--底部  -->
+  <view>
+    <tab-bar current-url="home" red-dot="{{all_dian}}" bindclick="previewUrl" login="{{has_login}}"></tab-bar>
+  </view>
+</view>

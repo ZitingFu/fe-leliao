@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "练习",
+  "usingComponents": {
+    "tab-bar": "/template/template"
+  }
+}

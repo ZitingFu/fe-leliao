@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "page/pages/home/home",
+    "page/pages/test/test",
+    "page/pages/logs/logs",
+    "page/pages/user/user",
+    "page/pages/publish/publish",
+    "page/pages/login/login",
+    "page/pages/topicinfo/topicinfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "乐撩",
+    "navigationBarTextStyle": "black"
+  }
+}
